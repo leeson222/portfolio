@@ -1,0 +1,45 @@
+// 변수
+
+// inner size
+$inner-size : 1300px;
+
+// font color
+$main-text-color : #3b3b3b;
+$point-text-color : #3367d1;
+$margin-center : 0 auto;
+
+$containerPadding : 170px 0;
+
+$header-bg : rgba(255,255,255,0.7);
+
+$h1-size : 3rem;
+$h2-size : 2.8rem;
+$h3-size : 2.6rem;
+$default-size : 1.2vw;
+
+$cubeRotate : 180deg;
+$cubeTranslate : 150px;
+
+$tit-margin-bottom : 5rem;
+
+$gnbWidth : 90%;
+
+$borderSize: 1px solid rgba(255,255,255,0.2);
+
+@mixin gnbWidth {
+  width: $gnbWidth; min-width: $gnbWidth; max-width: $gnbWidth;
+}
+
+@mixin innerWidth {
+  width: $inner-size; min-width: $inner-size; max-width: $inner-size; margin: $margin-center;
+}
+
+@mixin fontSize($lineHeightSize: 8vw) {
+  font: {
+    size: $default-size;
+    weight: 400;
+  }
+  color: $main-text-color;
+  line-height: $lineHeightSize;
+  margin: 1rem auto 1rem;
+}
